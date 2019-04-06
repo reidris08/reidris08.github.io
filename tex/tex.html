@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tex</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script type="text/x-mathjax-config">
+		  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+	</script>
+	<script type="text/javascript" async
+		  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML">
+	</script>
+
+	<style type="text/css">
+	h1,h2{
+		text-align: center;
+	}
+	p{
+		font-size: 18px;
+	}
+		
+	</style>
+</head>
+<body>
+	<h1>Вища математика</h1>
+	<h2>Невизначений інтеграл</h2>
+	<blockquote>
+		<h3>Завдання №1</h3>
+		<p>Знайти невизачений інтеграл</p>
+		$${\int\frac{4x^2+7x-23}{(x^2-4x+8)(x+1)^2}dx}$$
+		<p>Розв'язання. Розкладемо підінтегральний вираз на суму простих дробів методом невизначених коефіцієнтів:</p>
+		$$\frac{4x^2+7x-23}{(x^2-4x+8)(x+1)^2}=\frac{Ax+B}{x^2-4x+8}+\frac{Cx+D}{(x+1)^2}$$
+		$\begin{cases}{A+B=0, \\ 2A+B-4C+D=4,\\A+2B+8C-4D=7,\\B+8D =-23.}\end{cases}$
+		$\begin{cases}{A=1,\\B=1,\\C=-1,\\D=-3. }\end{cases}$
+		<p>Тоді</p>
+		<p style="font-size: 18px;">${\int \frac{4x^2+7x-23}{(x^2-4x+8)(x+1)^2}dx=\int\frac{x+1}{x^2-4x+8}dx-\int\frac{x+3}{(x+1)^2}dx=\int\frac{(x-2)dx}{(x-2)^2+2^2}+3\int\frac{dx}{(x-2)^2+2^2}-2\int\frac{dx}{x+1}-2\int\frac{dx}{(x+1)^2}=\frac{1}{2}ln(x^2-4x+8)+\frac{3}{2}arctg\frac{x-2}{2}-ln(x-1)+\frac{2}{x+1}+C }.$</p>
+	<h2>Диференціальні рівняння</h2>
+		<h3>Завдання №2</h3>
+		<p>Знайти спільне рішення диференційного рівняння</p>
+		$${xy'+x^2+xy-y=0}$$
+		<p>Розв'язаня. Підбираємо інтегруючий множик ${\mu(x)=e^{-x}}$ . Тоді, після домноження на ${\mu}$ , рівняння приймає вид:</p>
+		$${xe^{-x}dy=e^{-x}(y-xy-x^2)dx}$$
+		<p>Так як </p>
+		$$\frac{\delta}{\delta x}xe^{-x}=-xe^{-x}+e^{-x}=\frac{\delta}{\delta y}e^{-x}(y-xy-x^2),$$
+		<p>ми маємо керування в повних диференціалах. Знайдемо його рішення (відновимо "потенціальну" функцію U).</p>
+		$$\frac{\delta U}{\delta y}=-xe^{-x} , \Rightarrow U(x,y)=yxe^{-x}+ \varphi (x).$$
+		$$\frac{\delta U}{\delta x}=ye^{-x}-yxe^{-x}+ \varphi'(x)=e^{-x}(y-xy-x^2) , \Rightarrow \varphi'(x)=-x^2e^{-x}.$$
+		<p>Звідси</p>
+		$$\varphi(x)= \int -x^2e^{-x}dx=e^{-x}(x^2+2x+2)+C.$$
+		<p>Остаточно отримуємо рішення рівняння:</p>
+		$${U(x,y)=yxe^{-x}+e^{-x}(x^2+2x+2)+C=0},$$ 
+		<p>або</p>
+		$${y(x)=-\frac{e^{-x}(x^2+2x+2)+C}{xe^{-x}}}$$
+	<h2 >Однорідні диференціальні рівняння</h2>
+		<h3>Завдання №3</h3>
+		$${f(x,y)=\frac{x^2+y^2}{xy}}. Тоді$$
+		$${f(tx,ty)=\frac{t^2x^2+t^2y^2}{tx ty}=\frac{x^2+y^2}{xy}=f(x,y) \Rightarrow n=0}.$$ 
+		<p>Диференціальне рівняння $y'=f(x,y)$ називається однорідним, якщо функція $f(x,y)$ є однорідною функцією нульового розміру (n=0).</p>
+		<p>Однорідне диференціальне рівняння можна подати у вигляді:</p>
+		$${y'=\varphi\frac{y}{x}}.$$ 
+		<p>Дійсно, оскільки f(tx,ty)=f(x,y), то візьмемо за ${t=\frac{1}{x}}$ :</p>
+		$${f(x,y)=f(tx,ty)=f(1, \frac{y}{x})=\varphi\frac{y}{x}}.$$
+		<p>В одорідному диференціальному рівнянні ${y'=\varphi\frac{y}{x}}$ змінні, взагалі кажучи не відокремлюються. Однак його можна перетворити на рівняння з відокремлюваними змінними за допомогою змінни змінних:</p>
+		$${y=x*u(x)}$$
+		<p>Враховуючи, що ${y'=u(x)+x*u'(x)}$, і підставляючи ${y=x*u(x)}$ в ${y'=\varphi\frac{y}{x}}$ , дістаемо: </p>
+		$${u+xu'=\varphi(u)},$$
+		$${xu'=\varphi(u)-u},$$
+		$${\frac{du}{\varphi(u)}=\frac{dx}{x}}.$$
+		<p>Інтегруючи, маємо:</p>
+		$${ln|x|=\int\frac{du}{\varphi(u)-u}+C}.$$
+		<p>Обчисливши інтеграл і підставивши до нього значення $u=\frac{y}{x}$, дістанемо загальний інтеграл рівняння ${y'=\varphi\frac{y}{x}}$. Тут також треба врахувати, що можуть бути особливі розв'язки які задовольняють рівнянню:</p>
+		$${\varphi\frac{y}{x}-\frac{y}{x}=0}$$
+	<h2>Диференціальні рівняння у пових диференціалах</h2>
+			<h3>Завдання №4</h3>
+			<p>Розв'язати рівняння ${(2x+3x^2y)dx+(x^3-3y^2)dy=0}$. Спочатку перевіримо, чи виконується рівність ${\frac{\delta}{\delta y}}=\frac{\delta}{\delta x}$ :</p>
+			$${\frac{\delta}{\delta y}=(2x+3x^2y)=3x^2 , \frac{\delta}{\delta x}=(x^3-3^2)=3x^2}.$$
+			<p>Отже, рівняння, що розглядається, є рівнянням у повних диференціалах. Шукаємо функцію u(x,y), повний диференціал якої:
+			</p>
+			$${du(x,y)=\frac{\delta(x,y)}{\delta x}dx+\frac{\delta(x,y)}{\delta y}dy}$$
+			<p>дорівнює лівій частині вихідного рівняння, а значить справджується</p>
+			$${\frac{\delta u(x,y)}{\delta x}=2x+3x^2y , \frac {\delta (x,y)}{\delta y}=x^3-3^2}.$$
+			<p>Обчислюємо інтеграл від першої рівності, вважаючи у сталою:</p>
+			$${u(x,y)=\int (2x+3x^2y)dx=x^2+x^3y+C(y)}.$$
+			<p>Підставляючи цей вираз у другу рівність, матимемо</p>
+			$${\frac{\delta}{\delta y}[x^2+x^3y+C(y)]=x^3-3y^2},$$
+			$${x^3+C'(y)=x^3-3y^2},$$
+			$${C'(y)=-3y^2},$$
+			$${C(y)=y^3}.$$
+			<p>Отже, за u(x,y) можа взяти функцію:</p>
+			$${u(x,y)=x^2+x^3y-y^3}.$$
+			<p>Загальний розв'язок (загальний інтеграл) диференціального рівяння є тоді:</p>
+			$${x^2+x^3y-y^3=C}$$
+	</blockquote>
+</body>
+</html>
