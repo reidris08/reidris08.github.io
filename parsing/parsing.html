@@ -2,20 +2,37 @@
 <html>
 <head>
 	<title>Parsing</title>
-	<!--<link rel="stylesheet" type="text/css" href="https://s1.gismeteo.ua/static/css/informer2/gs_informerClient.min.css">-->
+  <meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" type="text/css" href="https://s1.gismeteo.ua/static/css/informer2/gs_informerClient.min.css">
 	<style type="text/css">
 		body{
 			background-image: url(weather.png);
 		}
-		.gsIContent{
-			margin-left: 50%;
+		.red{
+			margin-left: 30.5em;
+      margin-top: 12em;
+
 		}
+    @media screen and (max-width: 700px) and (max-height: 400px)  {
+    .red{
+      margin-left: 9em;
+      margin-top: 5em;
+      
+    }
+ /*   @media screen and (max-width: 400px) and (max-height: 700px)  {
+    .red{
+      margin-left: 3em;
+      margin-top: 5em;
+      
+    }*/
+  }
 	</style>
 </head>
 <body >
+<div class="red" >
 
 
-<div id="gsInformerID-jK4pgIg648cmMK" class="gsInformer" style="width:335px;height:225px">
+ <div id="gsInformerID-jK4pgIg648cmMK" class="gsInformer" style="width:335px;height:225px">
   <div class="gsIContent">
     <div id="cityLink">
         <a href="https://www.gismeteo.ua/ua/weather-oleksandria-11048/" title="Погода в Олександрії" target="_blank">
@@ -42,8 +59,9 @@
       </table>
     </div>
   </div>
-</div>
+ </div>
 <script src="https://www.gismeteo.ua/ajax/getInformer/?hash=jK4pgIg648cmMK" type="text/javascript"></script>
+</div>
 
 
 
