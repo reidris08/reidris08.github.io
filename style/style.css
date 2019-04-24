@@ -1,0 +1,43 @@
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+body{
+	background-color: #656561;	
+}
+
+.click {
+    font-size: 	18px;
+    color: white;
+    margin-left: 45%;
+    margin-top: 5%;
+    color: #b0b2b5;
+}
+.text-typing{
+
+    width: 12em;
+    margin-left: 30%;
+    margin-top: 18%;
+    color:  white;
+    font-size: 42px;
+    font-family: 'Marck Script', cursive;
+    white-space:nowrap;
+    overflow:hidden;
+    -webkit-animation: type 1s steps(50, end);
+    animation: type 1s steps(50, end);
+}
+@keyframes type{
+    from { width: 0; }
+}
+ 
+@-webkit-keyframes type{
+    from { width: 0; }
+}
+
+.welc{
+    float: right;
+    width: 20%;
+    margin-top: 4%;
+}
+
