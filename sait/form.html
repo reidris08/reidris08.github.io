@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <title>Form</title>
+   <link rel="stylesheet" href="styleforms.css">
+<style>
+input:focus { 
+    color: red; 
+	/*подсветка*/
+	 border: none;
+   box-shadow:0 0 20px #1BE5CF;
+   }
+      /*podsvetka*/
+   textarea:focus {
+   border: none;
+   box-shadow:0 0 20px #1BE5CF;
+   /*Send*/
+   #send{text-shadow:0px -2px 0px #000;
+background-color:#fff;
+letter-spacing:1px;
+border:#ae8f8f;
+padding:3px;}
+form #sender:active, #email:active,#text:active{border:1px  solid #ae8f8f;
+box-shadow:0 0 6px 3px #1896c1 inset;
+}
+.red{color:red}
+}
+</style>
+</head>
+<body>
+<section>
+      <article>
+        <h2>Відгуки та побажання</h2>
+        <br>
+        <form name="contact_form" method="post" action="#">
+        <p><label for="email"><span class="red"></span>Ваш E-mail</label></p>
+        <br>
+        <p><input type="text" name="email" size="60" id="email" placeholder="your@gmail.address" required autofocus></p><br><br>
+        
+        <p><textarea name="text" id="text"  cols="50" rows="6" placeholder="Залиште Ваш коментар..." maxlength="1100" required autofocus></textarea></p><br>
+          <p><input type="submit" value="Отправить" name="send" id="send"class="sendText" ></p>
+                  </form>
+         </article>
+     </section>
+    <?php 
+$email = $_POST['email'];
+$text = $_POST['text'];
+
+$email = htmlspecialchars($email);
+$text = htmlspecialchars($text);
+
+$email = urldecode($email);
+$text = urldecode($text);
+
+$email = trim($email);
+$text = trim($text);
+
+if (mail("reidris08@gmail.com", "Заявка с сайта", "Коментар:".$text.". E-mail: ".$email ,"From: reidris08@gmail.com \r\n"))
+ {     echo "сообщение успешно отправлено"; 
+} else { 
+    echo "при отправке сообщения возникли ошибки";
+
+
+ ?>
+</body>
+</html>
