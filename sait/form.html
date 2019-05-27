@@ -29,11 +29,13 @@ box-shadow:0 0 6px 3px #1896c1 inset;
 </style>
 </head>
 <body>
+
 <section>
       <article>
         <h2>Відгуки та побажання</h2>
         <br>
-        <form name="contact_form" method="post" action="#">
+        <?php if(!isset($_POST['text']) and !isset($_POST['email'])){ ?> 
+        <form name="contact_form" method="post" action="send.php">
         <p><label for="email"><span class="red"></span>Ваш E-mail</label></p>
         <br>
         <p><input type="text" name="email" size="60" id="email" placeholder="your@gmail.address" required autofocus></p><br><br>
@@ -41,27 +43,28 @@ box-shadow:0 0 6px 3px #1896c1 inset;
         <p><textarea name="text" id="text"  cols="50" rows="6" placeholder="Залиште Ваш коментар..." maxlength="1100" required autofocus></textarea></p><br>
           <p><input type="submit" value="Отправить" name="send" id="send"class="sendText" ></p>
                   </form>
+        <?php 
+			$email = $_POST['email'];
+			$text = $_POST['text'];
+
+			$email = htmlspecialchars($email);
+			$text = htmlspecialchars($text);
+
+			$email = urldecode($email);
+			$text = urldecode($text);
+
+			$email = trim($email);
+			$text = trim($text);
+
+			if (mail("reidris08@gmail.com", "Заявка с сайта", "Коментар:".$text.". E-mail: ".$email ,"From: reidris08@gmail.com \r\n"))
+			 {     echo "сообщение успешно отправлено"; 
+			} else { 
+			    echo "при отправке сообщения возникли ошибки";
+
+
+			 ?>
          </article>
      </section>
-    <?php 
-$email = $_POST['email'];
-$text = $_POST['text'];
-
-$email = htmlspecialchars($email);
-$text = htmlspecialchars($text);
-
-$email = urldecode($email);
-$text = urldecode($text);
-
-$email = trim($email);
-$text = trim($text);
-
-if (mail("reidris08@gmail.com", "Заявка с сайта", "Коментар:".$text.". E-mail: ".$email ,"From: reidris08@gmail.com \r\n"))
- {     echo "сообщение успешно отправлено"; 
-} else { 
-    echo "при отправке сообщения возникли ошибки";
-
-
- ?>
+    
 </body>
 </html>
