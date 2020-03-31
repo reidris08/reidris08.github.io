@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>API</title>
+	<meta name="viewport" content="width=device-width">
+	<style type="text/css">
+	body{
+
+	}
+	div#wordtree_basic{
+	 	margin-left: 22%;
+
+	 }
+
+	@media screen and (max-width: 400px) and (max-height: 700px)  {
+	    body{
+	    	/*width: 100%;*/
+	    }
+	    div#wordtree_basic{
+	    	margin: 0;
+	    	margin-top: 20%;
+
+	    }
+
+
+
+	}
+
+	</style>
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script> 
+	<script type="text/javascript">
+ google.load("visualization", "1.1", {packages:["wordtree"]});
+ google.setOnLoadCallback(drawChart);
+ function drawChart() {
+ var data = google.visualization.arrayToDataTable(
+ [ ['Фразы'],
+  ['диплом етапи підготовки теми'], ['диплом етапи підготовки вимог'], ['диплом етапи підготовки етапів'],
+  ['диплом етапи зміст завершення'],['диплом етапи зміст головне'],['диплом етапи зміст тези'],
+  ['диплом етапи заключення вступ'],['диплом етапи заключення висновок'],
+
+  ['диплом структура титульна сторінка'],['диплом структура анотація  російською'],['диплом структура анотація англійською'],
+  ['диплом структура  зміст'],
+  														['диплом структура вступ актуальні дослідження'],['диплом структура вступ обєкт'],
+  														['диплом структура вступ предмет аналізу'],['диплом структура вступ мета'],
+  														['диплом структура вступ завдання'], ['диплом структура вступ положення'],
+ ['диплом структура текстова частина'],['диплом структура  загальні висновки'],['диплом структура список літератури'], ['диплом структура додатки'],
+
+ ['диплом захист подання документів зведена відомость'],['диплом захист подання документів відгук керівника'],['диплом захист подання документів рецензія'],
+
+ ['диплом захист процедура доповідь про зміст'],['диплом захист процедура запитання до автора'],['диплом захист процедура відповідь студента'],
+ ['диплом захист процедура заключне слово'],['диплом захист процедура рішення комісії'],]
+
+ );
+
+ var options = {
+  //maxFontSize: 26,	
+
+  backgroundColor:  '#84E186',
+  colors: ['white'],
+ wordtree: {
+   format: 'implicit',
+   word: 'диплом',
+  }
+
+ };
+ var chart = new google.visualization.WordTree(document.getElementById('wordtree_basic'));
+ chart.draw(data, options);
+ }
+ </script> 
+
+</head>
+<body style="margin-top: 3%; padding: 0;background-color: #84E186;">
+	<div id="wordtree_basic" style=""></div> 
+</body>
+</html>
