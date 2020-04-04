@@ -1,0 +1,184 @@
+[ {
+  "@id" : "http://www.semanticweb.org/svitlo/ontologies/2020/3/untitled-ontology-2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Онтологія процесу підготовки і захисту дипломної роботи"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/svitlo/ontologies/2020/3/untitled-ontology-2#Студент",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.semanticweb.org/svitlo/ontologies/2020/3/untitled-ontology-2#вирішує",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/svitlo/ontologies/2020/3/untitled-ontology-2#приклад"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/svitlo/ontologies/2020/3/untitled-ontology-2#відгук_керівника",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/svitlo/ontologies/2020/3/untitled-ontology-2#подання"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/svitlo/ontologies/2020/3/untitled-ontology-2#відомості",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/svitlo/ontologies/2020/3/untitled-ontology-2#подання"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/svitlo/ontologies/2020/3/untitled-ontology-2#відомості_",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/svitlo/ontologies/2020/3/untitled-ontology-2#отримав"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/svitlo/ontologies/2020/3/untitled-ontology-2#відповідь",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/svitlo/ontologies/2020/3/untitled-ontology-2#надає"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/svitlo/ontologies/2020/3/untitled-ontology-2#завдання",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/svitlo/ontologies/2020/3/untitled-ontology-2#отримав"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/svitlo/ontologies/2020/3/untitled-ontology-2#заключні_слова",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/svitlo/ontologies/2020/3/untitled-ontology-2#надає"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/svitlo/ontologies/2020/3/untitled-ontology-2#захист_роботи",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/svitlo/ontologies/2020/3/untitled-ontology-2#здійснює"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/svitlo/ontologies/2020/3/untitled-ontology-2#здачі",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/svitlo/ontologies/2020/3/untitled-ontology-2#стосовно"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/svitlo/ontologies/2020/3/untitled-ontology-2#здійснює",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/svitlo/ontologies/2020/3/untitled-ontology-2#Студент"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/svitlo/ontologies/2020/3/untitled-ontology-2#знаходить",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/svitlo/ontologies/2020/3/untitled-ontology-2#Студент"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/svitlo/ontologies/2020/3/untitled-ontology-2#консультації",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/svitlo/ontologies/2020/3/untitled-ontology-2#щодо"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/svitlo/ontologies/2020/3/untitled-ontology-2#консультується",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/svitlo/ontologies/2020/3/untitled-ontology-2#інформацію"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/svitlo/ontologies/2020/3/untitled-ontology-2#надає",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/svitlo/ontologies/2020/3/untitled-ontology-2#захист_роботи"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/svitlo/ontologies/2020/3/untitled-ontology-2#осмислює",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/svitlo/ontologies/2020/3/untitled-ontology-2#інформацію"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/svitlo/ontologies/2020/3/untitled-ontology-2#отримав",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/svitlo/ontologies/2020/3/untitled-ontology-2#Студент"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/svitlo/ontologies/2020/3/untitled-ontology-2#оформлення",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/svitlo/ontologies/2020/3/untitled-ontology-2#стосовно"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/svitlo/ontologies/2020/3/untitled-ontology-2#оформлює",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/svitlo/ontologies/2020/3/untitled-ontology-2#вирішує"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/svitlo/ontologies/2020/3/untitled-ontology-2#оформлює_",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/svitlo/ontologies/2020/3/untitled-ontology-2#інформацію"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/svitlo/ontologies/2020/3/untitled-ontology-2#подання",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/svitlo/ontologies/2020/3/untitled-ontology-2#здійснює"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/svitlo/ontologies/2020/3/untitled-ontology-2#приклад",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/svitlo/ontologies/2020/3/untitled-ontology-2#знаходить"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/svitlo/ontologies/2020/3/untitled-ontology-2#рецензії",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/svitlo/ontologies/2020/3/untitled-ontology-2#подання"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/svitlo/ontologies/2020/3/untitled-ontology-2#розбирається",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/svitlo/ontologies/2020/3/untitled-ontology-2#приклад"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/svitlo/ontologies/2020/3/untitled-ontology-2#рішення_комісії",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/svitlo/ontologies/2020/3/untitled-ontology-2#захист_роботи"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/svitlo/ontologies/2020/3/untitled-ontology-2#складає_програму",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/svitlo/ontologies/2020/3/untitled-ontology-2#вирішує"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/svitlo/ontologies/2020/3/untitled-ontology-2#сроків",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/svitlo/ontologies/2020/3/untitled-ontology-2#щодо"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/svitlo/ontologies/2020/3/untitled-ontology-2#стосовно",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/svitlo/ontologies/2020/3/untitled-ontology-2#відомості_"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/svitlo/ontologies/2020/3/untitled-ontology-2#щодо",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/svitlo/ontologies/2020/3/untitled-ontology-2#відомості_"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/svitlo/ontologies/2020/3/untitled-ontology-2#інформацію",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/svitlo/ontologies/2020/3/untitled-ontology-2#знаходить"
+  } ]
+} ]
